@@ -56,7 +56,7 @@ Board.prototype.getPiece = function (pos) {
   } else {
     return this.grid[r][c];
   };
- 
+
 };
 
 /**
@@ -91,8 +91,10 @@ Board.prototype.isOccupied = function (pos) {
  * Returns empty array if no pieces of the opposite color are found.
  */
 Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip){
+  if (!this.isValidPos(pos)) return [];
+  dir = 
+  const nextPos =
 
-  
 };
 
 /**
